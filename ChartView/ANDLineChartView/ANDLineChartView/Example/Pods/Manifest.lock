@@ -1,0 +1,14 @@
+PODS:
+  - ANDLineChartView (0.2)
+
+DEPENDENCIES:
+  - ANDLineChartView (from `../`)
+
+EXTERNAL SOURCES:
+  ANDLineChartView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ANDLineChartView: 4fec507b4cdd11ab8eebaab51b20a35014aa27db
+
+COCOAPODS: 0.33.1
