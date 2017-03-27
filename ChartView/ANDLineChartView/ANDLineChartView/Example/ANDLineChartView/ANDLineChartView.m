@@ -67,31 +67,61 @@
   
   NSDictionary *viewsDict = NSDictionaryOfVariableBindings(_scrollView,_internalChartView,_backgroundChartView);//
   
-  [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_scrollView]|" options:0 metrics:nil views:viewsDict]];
-  [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_scrollView]|" options:0 metrics:nil views:viewsDict]];
+  [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_scrollView]|"
+                                                               options:0
+                                                               metrics:nil
+                                                                 views:viewsDict]];
+  [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_scrollView]|"
+                                                               options:0
+                                                               metrics:nil
+                                                                 views:viewsDict]];
   
-  [_scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_internalChartView]|" options:0 metrics:nil views:viewsDict]];
+  [_scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_internalChartView]|"
+                                                                      options:0
+                                                                      metrics:nil
+                                                                        views:viewsDict]];
   
-  [_scrollView addConstraint:[NSLayoutConstraint constraintWithItem:_internalChartView attribute:NSLayoutAttributeHeight
-                                                          relatedBy:NSLayoutRelationEqual toItem:_scrollView
-                                                          attribute:NSLayoutAttributeHeight multiplier:1.0 constant:0.0]];
+  [_scrollView addConstraint:[NSLayoutConstraint constraintWithItem:_internalChartView
+                                                          attribute:NSLayoutAttributeHeight
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:_scrollView
+                                                          attribute:NSLayoutAttributeHeight
+                                                         multiplier:1.0
+                                                           constant:0.0]];
   
-  [_scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_internalChartView]|" options:0 metrics:nil views:viewsDict]];
+  [_scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_internalChartView]|"
+                                                                      options:0
+                                                                      metrics:nil
+                                                                        views:viewsDict]];
 
-  [_scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_backgroundChartView]|" options:0 metrics:nil views:viewsDict]];
+  [_scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_backgroundChartView]|"
+                                                                      options:0
+                                                                      metrics:nil
+                                                                        views:viewsDict]];
   
   
-  _floatingConstraint = [NSLayoutConstraint constraintWithItem:_backgroundChartView attribute:NSLayoutAttributeLeft
-                                                     relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft
-                                                    multiplier:1.0 constant:0.0];
+  _floatingConstraint = [NSLayoutConstraint constraintWithItem:_backgroundChartView
+                                                     attribute:NSLayoutAttributeLeft
+                                                     relatedBy:NSLayoutRelationEqual
+                                                        toItem:self
+                                                     attribute:NSLayoutAttributeLeft
+                                                    multiplier:1.0
+                                                      constant:0.0];
   
-  _backgroundWidthEqualToScrollViewConstraints = [NSLayoutConstraint constraintWithItem:_backgroundChartView attribute:NSLayoutAttributeWidth
-                                                                              relatedBy:NSLayoutRelationEqual toItem:_scrollView
-                                                                              attribute:NSLayoutAttributeWidth multiplier:1.0 constant:0.0];
+  _backgroundWidthEqualToScrollViewConstraints = [NSLayoutConstraint constraintWithItem:_backgroundChartView
+                                                                              attribute:NSLayoutAttributeWidth
+                                                                              relatedBy:NSLayoutRelationEqual
+                                                                                 toItem:_scrollView
+                                                                              attribute:NSLayoutAttributeWidth multiplier:1.0
+                                                                               constant:0.0];
   
-  _backgroundWidthEqualToChartViewConstraints = [NSLayoutConstraint constraintWithItem:_backgroundChartView attribute:NSLayoutAttributeWidth
-                                                                             relatedBy:NSLayoutRelationEqual toItem:_internalChartView
-                                                                             attribute:NSLayoutAttributeWidth multiplier:1.0 constant:0.0];
+  _backgroundWidthEqualToChartViewConstraints = [NSLayoutConstraint constraintWithItem:_backgroundChartView
+                                                                             attribute:NSLayoutAttributeWidth
+                                                                             relatedBy:NSLayoutRelationEqual
+                                                                                toItem:_internalChartView
+                                                                             attribute:NSLayoutAttributeWidth
+                                                                            multiplier:1.0
+                                                                              constant:0.0];
   
   if([self shouldLabelsFloat]){
     [self addConstraint:_floatingConstraint];
