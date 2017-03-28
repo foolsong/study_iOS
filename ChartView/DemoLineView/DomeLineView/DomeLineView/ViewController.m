@@ -9,8 +9,6 @@
 #import "ViewController.h"
 #import "LineDemoView.h"
 
-#define CIRCLE_SIZE 14.0
-
 @interface ViewController ()
 
 @end
@@ -22,7 +20,6 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    [self lineDeomo];
 }
 
 - (void)lineDeomo {
