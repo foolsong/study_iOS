@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "LineDemoView.h"
+
+#define CIRCLE_SIZE 14.0
 
 @interface ViewController ()
 
@@ -16,14 +19,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidAppear:(BOOL)animated {
+    [self lineDeomo];
 }
 
-
+- (void)lineDeomo {
+    LineDemoView *lineView = [[LineDemoView alloc]  init];
+    [lineView setBackgroundColor:[UIColor grayColor]];
+    lineView.frame = self.view.bounds;
+    [self.view addSubview:lineView];
+}
 @end

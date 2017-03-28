@@ -13,6 +13,7 @@
 		84CA13131E891DB4005966AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CA13111E891DB4005966AA /* Main.storyboard */; };
 		84CA13151E891DB4005966AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CA13141E891DB4005966AA /* Assets.xcassets */; };
 		84CA13181E891DB4005966AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CA13161E891DB4005966AA /* LaunchScreen.storyboard */; };
+		84CA13211E8A0457005966AA /* LineDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA13201E8A0457005966AA /* LineDemoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		84CA13141E891DB4005966AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84CA13171E891DB4005966AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84CA13191E891DB4005966AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84CA131F1E8A0457005966AA /* LineDemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineDemoView.h; sourceTree = "<group>"; };
+		84CA13201E8A0457005966AA /* LineDemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineDemoView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				84CA13161E891DB4005966AA /* LaunchScreen.storyboard */,
 				84CA13191E891DB4005966AA /* Info.plist */,
 				84CA13081E891DB4005966AA /* Supporting Files */,
+				84CA131F1E8A0457005966AA /* LineDemoView.h */,
+				84CA13201E8A0457005966AA /* LineDemoView.m */,
 			);
 			path = DomeLineView;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84CA13101E891DB4005966AA /* ViewController.m in Sources */,
+				84CA13211E8A0457005966AA /* LineDemoView.m in Sources */,
 				84CA130D1E891DB4005966AA /* AppDelegate.m in Sources */,
 				84CA130A1E891DB4005966AA /* main.m in Sources */,
 			);
