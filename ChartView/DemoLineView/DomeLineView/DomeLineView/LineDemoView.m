@@ -34,9 +34,7 @@
 - (void)drawRect:(CGRect)rect {
     // 1.获取上下文
     CGContextRef ctx = UIGraphicsGetCurrentContext();
-    
     // --------------------------实心圆
-    
     // 2.画图
     CGContextAddEllipseInRect(ctx, CGRectMake(10, 10, 50, 50));
     [[UIColor greenColor] set];
