@@ -1,0 +1,6 @@
+use_frameworks!
+
+target 'BaseApp' do
+    pod 'MJRefresh'
+end
+ 
